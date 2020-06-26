@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spring-boot-nacos-config
+  cloud:
+    nacos:
+      server-addr: localhost:127.0.0.1:8848
