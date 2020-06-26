@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-feign
+    name: spring-cloud-feign-server
   cloud:
     nacos:
       server-addr: 127.0.0.1:8848

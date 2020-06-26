@@ -11,7 +11,9 @@
         <module>spring-cloud-nacos-discovery</module>
         <module>spring-cloud-feign-server</module>
         <module>spring-cloud-feign-client</module>
-    </modules>
+		<module>spring-cloud-feign-client-hystrix</module>
+		<module>spring-cloud-feign-api</module>
+	</modules>
     <packaging>pom</packaging>
     <name>spring-boot-example</name>
     <description>Demo project for Spring Boot</description>
