@@ -9,6 +9,8 @@
     <modules>
         <module>spring-cloud-nacos-config</module>
         <module>spring-cloud-nacos-discovery</module>
+        <module>spring-cloud-feign-server</module>
+        <module>spring-cloud-feign-client</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-example</name>
