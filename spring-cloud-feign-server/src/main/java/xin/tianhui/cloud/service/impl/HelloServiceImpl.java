@@ -8,11 +8,6 @@ import xin.tianhui.cloud.service.HelloService;
 public class HelloServiceImpl implements HelloService {
 	@GetMapping("hello")
 	public String hello(String name) {
-		try{
-			Thread.sleep(50000);
-		}catch (Exception e){
-			e.printStackTrace();
-		}
 		return new StringBuffer("hello ").append(name).toString();
 	}
 }

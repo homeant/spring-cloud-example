@@ -17,7 +17,7 @@ public class ClientController {
 
 	@GetMapping("/hello")
 	public String hello(String name){
-		return restTemplate.getForObject("http://spring-cloud-feign/hello?name=" + name, String.class);
+		return restTemplate.getForObject("http://spring-cloud-feign-server/hello?name=" + name, String.class);
 	}
 
 	@GetMapping("/hello2")
