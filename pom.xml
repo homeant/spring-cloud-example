@@ -15,7 +15,8 @@
 		<module>spring-cloud-feign-api</module>
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-sentinel</module>
-    </modules>
+		<module>spring-cloud-sleuth</module>
+	</modules>
     <packaging>pom</packaging>
     <name>spring-boot-example</name>
     <description>Demo project for Spring Boot</description>

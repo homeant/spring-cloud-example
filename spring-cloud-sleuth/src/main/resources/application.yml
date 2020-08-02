@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cloud-sleuth
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      config:
+        file-extension: properties
+  zipkin:
+    base-url: http://localhost:9411/
+    discovery-client-enabled: false
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            DispatcherServlet: DEBUG

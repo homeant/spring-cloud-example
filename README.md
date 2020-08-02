@@ -39,7 +39,9 @@ curl http://localhost:8081/hello?name=tom
 
 * spring-cloud-sentinel
 
+[下载地址](https://github.com/alibaba/Sentinel/releases)
+
 ```bash
-java -Dserver.port=8081 -Dcsp.sentinel.dashboard.server=localhost:8082 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.7.2.jar
+java -Dserver.port=8081 -Dcsp.sentinel.dashboard.server=localhost:8081 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.7.2.jar
 ```
 
