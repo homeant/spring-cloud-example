@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-sentinel
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      config:
+        file-extension: properties
+    sentinel:
+      transport:
+        port: 8081
+        dashboard: localhost:8081
