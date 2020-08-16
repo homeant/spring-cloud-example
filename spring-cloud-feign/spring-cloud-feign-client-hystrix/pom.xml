@@ -3,28 +3,36 @@
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<artifactId>spring-cloud-example</artifactId>
+		<artifactId>spring-cloud-feign</artifactId>
 		<groupId>xin.tianhui.cloud</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>spring-cloud-feign-api</artifactId>
-
-	<properties>
-		<skip.spring-boot>true</skip.spring-boot>
-	</properties>
+	<artifactId>spring-cloud-feign-client-hystrix</artifactId>
 
 	<dependencies>
 		<dependency>
+			<groupId>xin.tianhui.cloud</groupId>
+			<artifactId>spring-cloud-feign-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
-			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+
 </project>
