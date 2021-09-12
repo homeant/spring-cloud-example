@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-sentinel-apollo
+
+server:
+  port: 8081
+
+app:
+  id: spring-cloud-sentinel-apollo
+
+apollo:
+  bootstrap:
+    enabled: true
+  meta: http://106.54.227.205
+  user

@@ -8,11 +8,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>spring-cloud-gateway</module>
-        <module>spring-cloud-sentinel</module>
+        <module>spring-cloud-sentinel-nacos</module>
 		<module>spring-cloud-sleuth</module>
         <module>spring-cloud-security-oauth2</module>
 		<module>spring-cloud-feign</module>
 		<module>spring-cloud-nacos</module>
+		<module>spring-cloud-sentinel-apollo</module>
 	</modules>
     <packaging>pom</packaging>
     <name>spring-boot-example</name>
@@ -21,6 +22,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.source.version>1.8</java.source.version>
+		<java.target.version>1.8</java.target.version>
 
         <java.version>1.8</java.version>
         <spring-boot.version>2.2.8.RELEASE</spring-boot.version>
@@ -68,6 +71,11 @@
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>8.0.19</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ctrip.framework.apollo</groupId>
+				<artifactId>apollo-client</artifactId>
+				<version>1.7.0</version>
 			</dependency>
             <dependency>
                 <groupId>org.mapstruct</groupId>
